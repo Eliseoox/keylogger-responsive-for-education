@@ -2,7 +2,6 @@
 
 ## Uso Ético
 Este proyecto fue desarrollado con fines educativos para entender cómo funcionan los eventos de entrada del sistema y la interacción con distintos componentes del hardware.
-
 No debe ser utilizado en dispositivos de terceros sin su consentimiento explícito. El uso indebido puede violar leyes de privacidad.
 
 ---
@@ -23,7 +22,6 @@ El objetivo es analizar cómo se gestionan estos eventos a nivel de software y c
 
 ## Uso
 Ejecutar el programa en un entorno propio y controlado para observar el comportamiento de captura de eventos del sistema.
-
 El programa se ejecuta de forma local y almacena los datos generados en una carpeta de salida para su posterior análisis.
 
 ---
