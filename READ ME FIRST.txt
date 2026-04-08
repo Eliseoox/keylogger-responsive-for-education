@@ -1,48 +1,65 @@
-23:31 13/8/2025
 # Keylogger con Captura de Pantalla, Foto y Audio
 
-## Descripción
-Este programa es un keylogger que también captura screenshots, fotos de la cámara y audio de manera periódica. Los datos capturados se guardan en la carpeta especificada.
+## Uso Ético
+Este proyecto fue desarrollado con fines educativos para entender cómo funcionan los eventos de entrada del sistema y la interacción con distintos componentes del hardware.
 
-## Requisitos
-- Windows 10 o superior
-- Permisos de administrador para ejecutar el programa
-
-## Uso
-1. Conecta el pendrive a la computadora objetivo.
-2. Seleccione la carpeta "programa", entre a "dist", y ejecute el archivo "keylogger.exe".
-3. Cierre "Explorador de archivos"
-4. Para finalizar el programa se solicita apretar la tecla "esc"
-5. Abra "Explorador de archivos" vaya a la carpeta "shh" y tendrá todo lo hecho en el periodo de tiempo que estuvo ejecutado el programa.
-
-## Funcionalidades
-- **Keylogging**: Registra todas las teclas presionadas y las guarda en un archivo de texto.
-- **Captura de Pantalla**: Toma screenshots de la pantalla cada 20 segundos.
-- **Captura de Foto**: Toma fotos con la cámara cada 20 segundos.
-- **Captura de Audio**: Graba audio de 30 segundos cada 5 segundos.
-
-## Archivos Generados
-Todos los archivos generados se guardan en la carpeta `D:\shh` por defecto. Esta carpeta contiene las siguientes subcarpetas:
-- `keylog.txt`: Archivo de texto con el keylog.
-- `clipboard.txt`: Archivo de texto con el contenido del portapapeles.
-- `photo.jpg`: Foto tomada con la cámara.
-- `screenshots/`: Carpeta con los screenshots capturados.
-- `audios/`: Carpeta con los archivos de audio capturados.
-
-## Notas
-- Asegúrate de que la cámara y el micrófono estén conectados y funcionen correctamente antes de ejecutar el programa.
-- Si la cámara o el micrófono no están disponibles, el programa continuará funcionando sin capturar fotos o audio, respectivamente.
-- No se pedirán permisos adicionales para usar la cámara o el micrófono si se han ajustado los permisos de privacidad de Windows como se indica a continuación.
-
-## Ajustes de Privacidad de Windows
-Para evitar que el programa pida permisos para usar la cámara o el micrófono, sigue estos pasos:
-1. Abre la Configuración de Windows (Win + I).
-2. Ve a "Privacidad y seguridad".
-3. Selecciona "Micrófono" y desactiva "Permitir que las aplicaciones accedan al micrófono".
-4. Selecciona "Cámara" y desactiva "Permitir que las aplicaciones accedan a la cámara".
-5. Reinicia el equipo.
+No debe ser utilizado en dispositivos de terceros sin su consentimiento explícito. El uso indebido puede violar leyes de privacidad.
 
 ---
 
-**Nota: Este software se crea con fines educativos y con la exclusiva intención de aprendizaje, aunque su uso pueda extenderse más allá de estos propósitos mi objetivo no es el uso del programa si no el entendimiento de la estructura del mismo.**
+## Descripción
+Este proyecto implementa un sistema de registro de eventos de entrada del teclado junto con la captura periódica de datos del sistema como pantalla, cámara y audio.
 
+El objetivo es analizar cómo se gestionan estos eventos a nivel de software y cómo se almacenan para su posterior procesamiento.
+
+---
+
+## Requisitos
+- Windows 10 o superior
+- Python (para versión de desarrollo)
+- Permisos de usuario para acceso a hardware (cámara/micrófono si se utilizan)
+
+---
+
+## Uso
+Ejecutar el programa en un entorno propio y controlado para observar el comportamiento de captura de eventos del sistema.
+
+El programa se ejecuta de forma local y almacena los datos generados en una carpeta de salida para su posterior análisis.
+
+---
+
+## Funcionalidades
+- **Registro de teclado**: Captura eventos de entrada del teclado y los almacena en un archivo de texto.
+- **Captura de pantalla**: Realiza capturas de pantalla a intervalos definidos.
+- **Captura de imagen**: Obtiene imágenes desde la cámara del sistema.
+- **Captura de audio**: Registra fragmentos de audio utilizando el micrófono.
+
+---
+
+## Archivos Generados
+Los archivos generados se almacenan en una carpeta local de salida (`output/`) que contiene:
+
+- `keylog.txt`: Registro de eventos de teclado.
+- `clipboard.txt`: Contenido del portapapeles.
+- `photo.jpg`: Imagen capturada desde la cámara.
+- `screenshots/`: Carpeta con capturas de pantalla.
+- `audios/`: Carpeta con grabaciones de audio.
+
+---
+
+## Notas
+- El funcionamiento de la captura de cámara y audio depende de la disponibilidad de los dispositivos en el sistema.
+- Si algún dispositivo no está disponible, el programa continúa ejecutándose sin esa funcionalidad.
+- Este proyecto está orientado al análisis técnico y no incluye mecanismos de ocultamiento ni transmisión de datos.
+
+---
+
+## Conceptos Aprendidos
+- Captura de eventos de teclado en Python
+- Manejo de archivos
+- Interacción con hardware (cámara, micrófono)
+- Automatización de tareas periódicas
+
+---
+
+**Nota:** Este proyecto tiene un propósito exclusivamente educativo, enfocado en comprender la estructura y funcionamiento de este tipo de sistemas a nivel técnico.
